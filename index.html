@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página1</title>
+    <style>
+        h1 {
+            color: brown;
+            text-align: center;
+        }
+
+        p {
+            color: blue;
+            text-align: justify;
+
+        }
+
+        div {
+            position: relative;
+            text-align: center;
+        }
+
+        button {
+            background-color: #0066cc;
+            /* Cor vibrante, como o estilo do Silvio */
+            color: #fff;
+            font-size: 24px;
+            /* Texto grande, chamativo */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p{
+            background-color: #0066cc; /* Cor vibrante */
+            color: #fff;
+            font-size: 20px; /* Tamanho de texto grande */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            max-width: 600px;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Silvio Santos</h1>
+    <p>Silvio Santos Ipsum Ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam. Boca
+        sujuam... sem vergonhuamm. O prêmio é em barras de ouro, que vale mais que dinheiroam. É fácil ou não éam? Ma
+        vale dérreaisam? Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. É por sua conta e riscoamm?
+    </p>
+    <p>Silvio Santos Ipsum Estamos em ritmo de festamm. Ma vai pra lá. É fácil ou não éam? Patríciaaammmm... Luiz
+        Ricardouaaammmmmm. É com você Lombardiam. É por sua conta e riscoamm? Vem pra lá, mah você vai pra cá. Agora
+        vai, agora vem pra láamm.</p>
+    <div>
+        <div id="image-container"></div>
+        <button onclick="silvioSantos()">Clique para Silvio Santos</button>
+    </div>
+
+    <script>
+
+        function silvioSantos() {
+
+            const img = document.createElement('img');
+
+            img.src = 'https://c.tenor.com/giIwBtUxA1MAAAAC/tenor.gif';
+
+            const container = document.getElementById('image-container');
+
+            container.appendChild(img);
+
+            const audio = new Audio('silvio.mp3');
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
